@@ -591,6 +591,26 @@
 // gMapGroup_IndoorRoute124
 #define MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE (0 | (33 << 8))
 
-#define MAP_GROUPS_COUNT 34
+// Sideroutes
+#define MAP_SIDEROUTE_102         (0 | (34 << 8))
+#define MAP_SIDEROUTE_111         (1 | (34 << 8))
+#define MAP_SIDEROUTE_114         (2 | (34 << 8))
+#define MAP_SIDEROUTE_117         (3 | (34 << 8))
+#define MAP_SIDEROUTE_120         (4 | (34 << 8))
+#define MAP_SIDECAVE_METEOR_FALLS (5 | (34 << 8))
+#define MAP_SIDECAVE_MT_PYRE      (6 | (34 << 8))
+#define MAP_SIDECAVE_VICTORY_ROAD (7 | (34 << 8))
+
+// Forgotten_Cave
+#define MAP_FORGOTTEN_CAVE_ENTRANCE    (0 | (35 << 8))
+#define MAP_FORGOTTEN_CAVE_SEA         (1 | (35 << 8))
+#define MAP_FORGOTTEN_CAVE_UNDERWATER1 (2 | (35 << 8))
+#define MAP_FORGOTTEN_CAVE_UNDERWATER2 (3 | (35 << 8))
+#define MAP_FORGOTTEN_CAVE_ICE         (4 | (35 << 8))
+#define MAP_FORGOTTEN_CAVE_FIRE        (5 | (35 << 8))
+#define MAP_FORGOTTEN_CAVE_ELEC        (6 | (35 << 8))
+#define MAP_FORGOTTEN_CAVE_SPECIAL     (7 | (35 << 8))
+
+#define MAP_GROUPS_COUNT 36
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

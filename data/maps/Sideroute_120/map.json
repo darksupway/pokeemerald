@@ -1,0 +1,39 @@
+{
+  "id": "MAP_SIDEROUTE_120",
+  "name": "Sideroute_120",
+  "layout": "LAYOUT_SIDEROUTE_120",
+  "music": "MUS_ROUTE120",
+  "region_map_section": "MAPSEC_SIDEROUTE_120",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY_CLOUDS",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "direction": "up",
+      "offset": 40,
+      "map": "MAP_ROUTE121"
+    },
+    {
+      "direction": "up",
+      "offset": 0,
+      "map": "MAP_ROUTE120"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

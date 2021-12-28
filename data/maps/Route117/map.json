@@ -22,6 +22,16 @@
       "direction": "right",
       "offset": 0,
       "map": "MAP_MAUVILLE_CITY"
+    },
+    {
+      "direction": "down",
+      "offset": 0,
+      "map": "MAP_SIDEROUTE_117"
+    },
+    {
+      "direction": "up",
+      "offset": 13,
+      "map": "MAP_SIDEROUTE_111"
     }
   ],
   "object_events": [
@@ -347,7 +357,9 @@
       "dest_warp_id": 0
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+
+  ],
   "bg_events": [
     {
       "type": "sign",

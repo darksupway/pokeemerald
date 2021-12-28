@@ -1,0 +1,22 @@
+mapscripts Forgotten_Cave_Entrance_MapScripts {}
+
+script AncientText1 {
+    lock
+    msgbox(format("In ... land of ...isue the Al...hty Sin...h, the Orig...ne, cr...ted bei... of ti..., ...ace and distor..."))
+    release
+    end
+}
+
+script AncientText2 {
+    lock
+    msgbox(format("Wit...em, tim... space d...orting artif...s cam... be."))
+    release
+    end
+}
+
+script AncientText3 {
+    lock
+    msgbox(format("Nine ...tifacts rest ... They ... possible ...teract with beings of m..."))
+    release
+    end
+}
