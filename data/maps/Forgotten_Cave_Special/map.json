@@ -1,0 +1,75 @@
+{
+  "id": "MAP_FORGOTTEN_CAVE_SPECIAL",
+  "name": "Forgotten_Cave_Special",
+  "layout": "LAYOUT_FORGOTTEN_CAVE_SPECIAL",
+  "music": "MUS_RG_SEVII_CAVE",
+  "region_map_section": "MAPSEC_FORGOTTEN_CAVE",
+  "requires_flash": false,
+  "weather": "WEATHER_SHADE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 4,
+      "y": 48,
+      "elevation": 3,
+      "dest_map": "MAP_FORGOTTEN_CAVE_SEA",
+      "dest_warp_id": 3
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "weather",
+      "x": 43,
+      "y": 25,
+      "elevation": 3,
+      "weather": "COORD_EVENT_WEATHER_SUNNY"
+    },
+    {
+      "type": "weather",
+      "x": 10,
+      "y": 23,
+      "elevation": 3,
+      "weather": "COORD_EVENT_WEATHER_RAIN"
+    },
+    {
+      "type": "weather",
+      "x": 20,
+      "y": 45,
+      "elevation": 4,
+      "weather": "COORD_EVENT_WEATHER_FOG_HORIZONTAL"
+    },
+    {
+      "type": "weather",
+      "x": 10,
+      "y": 24,
+      "elevation": 3,
+      "weather": "COORD_EVENT_WEATHER_SHADE"
+    },
+    {
+      "type": "weather",
+      "x": 43,
+      "y": 26,
+      "elevation": 3,
+      "weather": "COORD_EVENT_WEATHER_SHADE"
+    },
+    {
+      "type": "weather",
+      "x": 20,
+      "y": 47,
+      "elevation": 0,
+      "weather": "COORD_EVENT_WEATHER_SHADE"
+    }
+  ],
+  "bg_events": [
+
+  ]
+}

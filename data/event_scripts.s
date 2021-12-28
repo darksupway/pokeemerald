@@ -1055,3 +1055,35 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/text/frontier_brain.inc"
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
+
+	.include "data/maps/Sideroute_102/scripts.inc"
+
+	.include "data/maps/Sideroute_111/scripts.inc"
+
+	.include "data/maps/Sideroute_114/scripts.inc"
+
+	.include "data/maps/Sideroute_117/scripts.inc"
+
+	.include "data/maps/Sideroute_120/scripts.inc"
+
+	.include "data/maps/Forgotten_Cave_Entrance/scripts.inc"
+
+	.include "data/maps/Forgotten_Cave_Sea/scripts.inc"
+
+	.include "data/maps/Forgotten_Cave_Underwater1/scripts.inc"
+
+	.include "data/maps/Forgotten_Cave_Underwater2/scripts.inc"
+
+	.include "data/maps/Forgotten_Cave_Ice/scripts.inc"
+
+	.include "data/maps/Forgotten_Cave_Fire/scripts.inc"
+
+	.include "data/maps/Forgotten_Cave_Elec/scripts.inc"
+
+	.include "data/maps/Forgotten_Cave_Special/scripts.inc"
+
+	.include "data/maps/Sidecave_MeteorFalls/scripts.inc"
+
+	.include "data/maps/Sidecave_MtPyre/scripts.inc"
+
+	.include "data/maps/Sidecave_VictoryRoad/scripts.inc"
