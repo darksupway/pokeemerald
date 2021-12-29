@@ -22,13 +22,28 @@
       "y": 9,
       "elevation": 4,
       "dest_map": "MAP_FORGOTTEN_CAVE_SEA",
-      "dest_warp_id": 1
+      "dest_warp_id": 3
     }
   ],
   "coord_events": [
 
   ],
   "bg_events": [
-
+    {
+      "type": "hidden_item",
+      "x": 24,
+      "y": 17,
+      "elevation": 3,
+      "item": "ITEM_TM50_OVERHEAT",
+      "flag": "FLAG_HIDDEN_ITEM_FORGOTTEN_CAVE_FIRE_TM50"
+    },
+    {
+      "type": "hidden_item",
+      "x": 9,
+      "y": 14,
+      "elevation": 3,
+      "item": "ITEM_CHARCOAL",
+      "flag": "FLAG_HIDDEN_ITEM_FORGOTTEN_CAVE_FIRE_CHARCOAL"
+    }
   ]
 }

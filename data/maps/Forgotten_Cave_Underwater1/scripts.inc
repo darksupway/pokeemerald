@@ -1,3 +1,20 @@
 Forgotten_Cave_Underwater1_MapScripts::
 	.byte 0
 
+
+GiveMissingDeepSeaItem::
+	goto_if_unset FLAG_HIDDEN_ITEM_MISSING_DEEP_SEA_ITEM, GiveMissingDeepSeaItem_2
+GiveMissingDeepSeaItem_1:
+	end
+
+GiveMissingDeepSeaItem_2:
+	goto_if_set FLAG_CHOSE_DEEP_SEA_TOOTH, GiveMissingDeepSeaItem_5
+	finditem ITEM_DEEP_SEA_TOOTH
+GiveMissingDeepSeaItem_4:
+	setflag FLAG_HIDDEN_ITEM_MISSING_DEEP_SEA_ITEM
+	goto GiveMissingDeepSeaItem_1
+
+GiveMissingDeepSeaItem_5:
+	finditem ITEM_DEEP_SEA_SCALE
+	goto GiveMissingDeepSeaItem_4
+

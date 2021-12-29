@@ -59,6 +59,22 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "AncientText3"
+    },
+    {
+      "type": "hidden_item",
+      "x": 37,
+      "y": 27,
+      "elevation": 3,
+      "item": "ITEM_STAR_PIECE",
+      "flag": "FLAG_HIDDEN_ITEM_FORGOTTEN_CAVE_ENTRANCE_STAR_PIECE"
+    },
+    {
+      "type": "hidden_item",
+      "x": 19,
+      "y": 17,
+      "elevation": 3,
+      "item": "ITEM_TM40_AERIAL_ACE",
+      "flag": "FLAG_HIDDEN_ITEM_FORGOTTEN_CAVE_ENTRANCE_TM40"
     }
   ]
 }

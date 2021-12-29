@@ -35,7 +35,7 @@
       "y": 2,
       "elevation": 3,
       "item": "ITEM_POTION",
-      "flag": "FLAG_HIDDEN_ITEM_SIDEROUTE_102"
+      "flag": "FLAG_HIDDEN_ITEM_SIDEROUTE_102_POTION"
     }
   ]
 }

@@ -35,7 +35,7 @@
       "y": 8,
       "elevation": 3,
       "item": "ITEM_MAX_REVIVE",
-      "flag": "FLAG_HIDDEN_ITEM_SIDECAVE_VICTORY_ROAD"
+      "flag": "FLAG_HIDDEN_ITEM_SIDECAVE_VICTORY_ROAD_MAX_REVIVE"
     }
   ]
 }

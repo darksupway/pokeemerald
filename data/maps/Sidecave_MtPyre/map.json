@@ -25,7 +25,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Sidecave_MtPyre_EventScript_ItemExpShare",
-      "flag": "FLAG_ITEM_SIDECAVE_MT_PYRE"
+      "flag": "FLAG_ITEM_SIDECAVE_MT_PYRE_EXP_SHARE"
     }
   ],
   "warp_events": [
@@ -54,7 +54,7 @@
       "y": 7,
       "elevation": 3,
       "item": "ITEM_POKE_DOLL",
-      "flag": "FLAG_HIDDEN_ITEM_SIDECAVE_MT_PYRE"
+      "flag": "FLAG_HIDDEN_ITEM_SIDECAVE_MT_PYRE_POKE_DOLL"
     }
   ]
 }

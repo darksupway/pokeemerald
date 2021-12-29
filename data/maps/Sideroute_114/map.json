@@ -31,7 +31,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Sideroute_114_EventScript_ItemLuckyEgg",
-      "flag": "FLAG_ITEM_SIDEROUTE_114"
+      "flag": "FLAG_ITEM_SIDEROUTE_114_LUCKY_EGG"
     }
   ],
   "warp_events": [
@@ -44,10 +44,10 @@
     {
       "type": "hidden_item",
       "x": 33,
-      "y": 18,
+      "y": 19,
       "elevation": 3,
       "item": "ITEM_TM26_EARTHQUAKE",
-      "flag": "FLAG_HIDDEN_ITEM_SIDEROUTE_114"
+      "flag": "FLAG_HIDDEN_ITEM_SIDEROUTE_114_TM26_EARTHQUAKE"
     }
   ]
 }

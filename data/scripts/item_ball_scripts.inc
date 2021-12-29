@@ -658,7 +658,7 @@ MagmaHideout_3F_3R_EventScript_ItemEscapeRope::
 	finditem ITEM_ESCAPE_ROPE
 	end
 
-@ added scripts
+@ added scripts - Sideroutes
 Sideroute_114_EventScript_ItemLuckyEgg::
 	finditem ITEM_LUCKY_EGG
 	end
@@ -669,4 +669,29 @@ Sideroute_120_EventScript_ItemPPMax::
 
 Sidecave_MtPyre_EventScript_ItemExpShare::
 	finditem ITEM_EXP_SHARE
+	end
+
+@ added scripts - Forgotten Cave
+ForgottenCave_Entrance_EventScript_ItemStarPiece::
+	finditem ITEM_STAR_PIECE
+	end
+
+Forgotten_Cave_Elec_EventScript_Item_TM25::
+	finditem ITEM_TM25_THUNDER
+	end
+
+Forgotten_Cave_Elec_EventScript_ItemMaxElixir::
+	finditem ITEM_MAX_ELIXIR
+	end
+
+Forgotten_Cave_Special_EventScript_ItemUltraBall::
+	finditem ITEM_ULTRA_BALL
+	end
+
+Forgotten_Cave_Special_EventScript_ItemNugget::
+	finditem ITEM_NUGGET
+	end
+
+Forgotten_Cave_Special_EventScript_ItemMaxRevive::
+	finditem ITEM_MAX_REVIVE
 	end

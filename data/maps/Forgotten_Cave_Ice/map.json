@@ -29,6 +29,21 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "hidden_item",
+      "x": 9,
+      "y": 20,
+      "elevation": 3,
+      "item": "ITEM_MYSTIC_WATER",
+      "flag": "FLAG_HIDDEN_ITEM_FORGOTTEN_CAVE_ICE_MYSTIC_WATER"
+    },
+    {
+      "type": "hidden_item",
+      "x": 23,
+      "y": 14,
+      "elevation": 3,
+      "item": "ITEM_NEVER_MELT_ICE",
+      "flag": "FLAG_HIDDEN_ITEM_FORGOTTEN_CAVE_ICE_NEVER_MELT_ICE"
+    }
   ]
 }

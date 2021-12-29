@@ -651,22 +651,22 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_123_RARE_CANDY                (FLAG_HIDDEN_ITEMS_START + 0x6E)
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
 
-#define FLAG_HIDDEN_ITEM_SIDEROUTE_102                       0x264
-#define FLAG_HIDDEN_ITEM_SIDEROUTE_111                       0x265
-#define FLAG_HIDDEN_ITEM_SIDEROUTE_114                       0x266
-#define FLAG_HIDDEN_ITEM_SIDEROUTE_117                       0x267
-#define FLAG_HIDDEN_ITEM_SIDEROUTE_120                       0x268
-#define FLAG_HIDDEN_ITEM_SIDECAVE_METEOR_FALLS               0x269
-#define FLAG_HIDDEN_ITEM_SIDECAVE_MT_PYRE                    0x26A
-#define FLAG_HIDDEN_ITEM_SIDECAVE_VICTORY_ROAD               0x26B
-#define FLAG_HIDDEN_ITEM_0x26C  0x26C // Unused Flag
-#define FLAG_HIDDEN_ITEM_0x26D  0x26D // Unused Flag
-#define FLAG_HIDDEN_ITEM_0x26E  0x26E // Unused Flag
-#define FLAG_HIDDEN_ITEM_0x26F  0x26F // Unused Flag
-#define FLAG_HIDDEN_ITEM_0x270  0x270 // Unused Flag
-#define FLAG_HIDDEN_ITEM_0x271  0x271 // Unused Flag
-#define FLAG_HIDDEN_ITEM_0x272  0x272 // Unused Flag
-#define FLAG_HIDDEN_ITEM_0x273  0x273 // Unused Flag
+#define FLAG_HIDDEN_ITEM_SIDEROUTE_102_POTION                0x264
+#define FLAG_HIDDEN_ITEM_SIDEROUTE_111_BIG_MUSHROOM          0x265
+#define FLAG_HIDDEN_ITEM_SIDEROUTE_114_TM26_EARTHQUAKE       0x266
+#define FLAG_HIDDEN_ITEM_SIDEROUTE_117_BERRY_JUICE           0x267
+#define FLAG_HIDDEN_ITEM_SIDEROUTE_120_SUN_STONE             0x268
+#define FLAG_HIDDEN_ITEM_SIDECAVE_METEOR_FALLS_MOON_STONE    0x269
+#define FLAG_HIDDEN_ITEM_SIDECAVE_MT_PYRE_POKE_DOLL          0x26A
+#define FLAG_HIDDEN_ITEM_SIDECAVE_VICTORY_ROAD_MAX_REVIVE    0x26B
+#define FLAG_HIDDEN_ITEM_MISSING_DEEP_SEA_ITEM               0x26C
+#define FLAG_HIDDEN_ITEM_FORGOTTEN_CAVE_ENTRANCE_TM40        0x26D
+#define FLAG_HIDDEN_ITEM_FORGOTTEN_CAVE_ENTRANCE_STAR_PIECE  0x26E
+#define FLAG_HIDDEN_ITEM_FORGOTTEN_CAVE_ICE_NEVER_MELT_ICE   0x26F
+#define FLAG_HIDDEN_ITEM_FORGOTTEN_CAVE_ICE_MYSTIC_WATER     0x270
+#define FLAG_HIDDEN_ITEM_FORGOTTEN_CAVE_FIRE_CHARCOAL        0x271
+#define FLAG_HIDDEN_ITEM_FORGOTTEN_CAVE_FIRE_TM50            0x272
+#define FLAG_HIDDEN_ITEM_FORGOTTEN_CAVE_ELEC_MAGNET          0x273
 #define FLAG_HIDDEN_ITEM_0x274  0x274 // Unused Flag
 #define FLAG_HIDDEN_ITEM_0x275  0x275 // Unused Flag
 #define FLAG_HIDDEN_ITEM_0x276  0x276 // Unused Flag
@@ -1217,14 +1217,15 @@
 #define FLAG_ITEM_SAFARI_ZONE_NORTH_EAST_NUGGET                     0x491
 #define FLAG_ITEM_SAFARI_ZONE_SOUTH_EAST_BIG_PEARL                  0x492
 
-#define FLAG_ITEM_SIDEROUTE_114                                     0x493
-#define FLAG_ITEM_SIDEROUTE_120                                     0x494
-#define FLAG_ITEM_SIDECAVE_MT_PYRE                                  0x495
-#define FLAG_UNUSED_0x496                                           0x496 // Unused Flag
-#define FLAG_UNUSED_0x497                                           0x497 // Unused Flag
-#define FLAG_UNUSED_0x498                                           0x498 // Unused Flag
-#define FLAG_UNUSED_0x499                                           0x499 // Unused Flag
-#define FLAG_UNUSED_0x49A                                           0x49A // Unused Flag
+// added
+#define FLAG_ITEM_SIDEROUTE_114_LUCKY_EGG                           0x493
+#define FLAG_ITEM_SIDEROUTE_120_PP_MAX                              0x494
+#define FLAG_ITEM_SIDECAVE_MT_PYRE_EXP_SHARE                        0x495
+#define FLAG_ITEM_FORGOTTEN_CAVE_ELEC_MAX_ELIXIR                    0x496
+#define FLAG_ITEM_FORGOTTEN_CAVE_ELEC_TM25_THUNDER                  0x497
+#define FLAG_ITEM_FORGOTTEN_CAVE_SPECIAL_NUGGET                     0x498
+#define FLAG_ITEM_FORGOTTEN_CAVE_SPECIAL_ULTRA_BALL                 0x499
+#define FLAG_ITEM_FORGOTTEN_CAVE_SPECIAL_MAX_REVIVE                 0x49A
 #define FLAG_UNUSED_0x49B                                           0x49B // Unused Flag
 #define FLAG_UNUSED_0x49C                                           0x49C // Unused Flag
 #define FLAG_UNUSED_0x49D                                           0x49D // Unused Flag

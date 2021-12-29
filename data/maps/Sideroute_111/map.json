@@ -35,7 +35,7 @@
       "y": 5,
       "elevation": 3,
       "item": "ITEM_BIG_MUSHROOM",
-      "flag": "FLAG_HIDDEN_ITEM_SIDEROUTE_111"
+      "flag": "FLAG_HIDDEN_ITEM_SIDEROUTE_111_BIG_MUSHROOM"
     }
   ]
 }

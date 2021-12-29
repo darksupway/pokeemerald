@@ -14,7 +14,48 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
   "object_events": [
-
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 18,
+      "y": 36,
+      "elevation": 4,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Forgotten_Cave_Special_EventScript_ItemUltraBall",
+      "flag": "FLAG_ITEM_FORGOTTEN_CAVE_SPECIAL_ULTRA_BALL",
+      "item": "ultraball"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 9,
+      "y": 14,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Forgotten_Cave_Special_EventScript_ItemMaxRevive",
+      "flag": "FLAG_ITEM_FORGOTTEN_CAVE_SPECIAL_MAX_REVIVE",
+      "item": "ultraball"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 45,
+      "y": 16,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Forgotten_Cave_Special_EventScript_ItemNugget",
+      "flag": "FLAG_ITEM_FORGOTTEN_CAVE_SPECIAL_NUGGET",
+      "item": "ultraball"
+    }
   ],
   "warp_events": [
     {
@@ -22,7 +63,7 @@
       "y": 48,
       "elevation": 3,
       "dest_map": "MAP_FORGOTTEN_CAVE_SEA",
-      "dest_warp_id": 3
+      "dest_warp_id": 1
     }
   ],
   "coord_events": [

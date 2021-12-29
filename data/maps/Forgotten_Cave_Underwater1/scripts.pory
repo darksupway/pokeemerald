@@ -1,1 +1,13 @@
 mapscripts Forgotten_Cave_Underwater1_MapScripts {}
+
+script GiveMissingDeepSeaItem {
+    if (!flag(FLAG_HIDDEN_ITEM_MISSING_DEEP_SEA_ITEM)) {
+        if (flag(FLAG_CHOSE_DEEP_SEA_TOOTH)) {
+            finditem(ITEM_DEEP_SEA_SCALE)
+        } else {
+            finditem(ITEM_DEEP_SEA_TOOTH)
+        }
+        setflag(FLAG_HIDDEN_ITEM_MISSING_DEEP_SEA_ITEM)
+    }
+    end
+}
