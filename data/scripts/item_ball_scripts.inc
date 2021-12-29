@@ -657,3 +657,16 @@ MagmaHideout_4F_EventScript_ItemMaxRevive::
 MagmaHideout_3F_3R_EventScript_ItemEscapeRope::
 	finditem ITEM_ESCAPE_ROPE
 	end
+
+@ added scripts
+Sideroute_114_EventScript_ItemLuckyEgg::
+	finditem ITEM_LUCKY_EGG
+	end
+
+Sideroute_120_EventScript_ItemPPMax::
+	finditem ITEM_PP_MAX
+	end
+
+Sidecave_MtPyre_EventScript_ItemExpShare::
+	finditem ITEM_EXP_SHARE
+	end

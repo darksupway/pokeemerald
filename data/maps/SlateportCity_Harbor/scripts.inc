@@ -355,6 +355,7 @@ SlateportCity_Harbor_EventScript_DeepSeaTooth::
 	removeitem ITEM_SCANNER
 	msgbox SlateportCity_Harbor_Text_HandedScannerToStern, MSGBOX_DEFAULT
 	setflag FLAG_EXCHANGED_SCANNER
+	setflag FLAG_CHOSE_DEEP_SEA_TOOTH
 	goto SlateportCity_Harbor_EventScript_TradedScanner
 	end
 

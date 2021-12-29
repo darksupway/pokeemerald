@@ -29,6 +29,13 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "hidden_item",
+      "x": 8,
+      "y": 9,
+      "elevation": 3,
+      "item": "ITEM_BERRY_JUICE",
+      "flag": "FLAG_HIDDEN_ITEM_SIDEROUTE_117"
+    }
   ]
 }
