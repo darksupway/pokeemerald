@@ -1,1 +1,83 @@
-mapscripts Forgotten_Cave_Special_MapScripts {}
+mapscripts Forgotten_Cave_Special_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        call_if_unset(FLAG_DEFEATED_MEWTWO, ShowMewtwo)
+        call_if_unset(FLAG_DEFEATED_CELEBI, ShowCelebi)
+        call_if_unset(FLAG_DEFEATED_JIRACHI, ShowJirachi)
+        end
+    }
+}
+
+script ShowMewtwo {
+    clearflag(FLAG_HIDE_MEWTWO)
+    return
+}
+
+script ShowCelebi {
+    clearflag(FLAG_HIDE_CELEBI)
+    return
+}
+
+script ShowJirachi {
+    clearflag(FLAG_HIDE_JIRACHI)
+    return
+}
+
+script FightMewtwo {
+    lock
+    waitse
+    playmoncry(SPECIES_MEWTWO, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setwildbattle(SPECIES_MEWTWO, 70, ITEM_MASTER_BALL)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if (var(VAR_RESULT) == B_OUTCOME_WON || var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+        setflag(FLAG_DEFEATED_MEWTWO)
+        goto(Common_EventScript_LegendaryArtifactVanishes)
+        end
+    } else {
+        goto(Common_EventScript_LegendaryArtifactFades)
+        end
+    }
+}
+
+script FightCelebi {
+    lock
+    waitse
+    playmoncry(SPECIES_CELEBI, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setwildbattle(SPECIES_CELEBI, 5, ITEM_GANLON_BERRY)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if (var(VAR_RESULT) == B_OUTCOME_WON || var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+        setflag(FLAG_DEFEATED_CELEBI)
+        goto(Common_EventScript_LegendaryArtifactVanishes)
+        end
+    } else {
+        goto(Common_EventScript_LegendaryArtifactFades)
+        end
+    }
+}
+
+script FightJirachi {
+    lock
+    waitse
+    playmoncry(SPECIES_JIRACHI, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setwildbattle(SPECIES_JIRACHI, 5, ITEM_SALAC_BERRY)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if (var(VAR_RESULT) == B_OUTCOME_WON || var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+        setflag(FLAG_DEFEATED_JIRACHI)
+        goto(Common_EventScript_LegendaryArtifactVanishes)
+        end
+    } else {
+        goto(Common_EventScript_LegendaryArtifactFades)
+        end
+    }
+}

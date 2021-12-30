@@ -954,6 +954,12 @@ gText_LegendaryFlewAway::
 	.include "data/text/questionnaire.inc"
 	.include "data/text/abnormal_weather.inc"
 
+gText_LegendaryArtifactVanishes::
+	.string "The artifact completely vanishes.$"
+
+gText_LegendaryArtifactFades::
+	.string "The artifact fades away.$"
+
 EventScript_SelectWithoutRegisteredItem::
 	msgbox gText_SelectWithoutRegisteredItem, MSGBOX_SIGN
 	end
@@ -988,6 +994,22 @@ Common_EventScript_RemoveStaticPokemon::
 	fadescreenswapbuffers FADE_TO_BLACK
 	removeobject VAR_LAST_TALKED
 	fadescreenswapbuffers FADE_FROM_BLACK
+	release
+	end
+
+Common_EventScript_LegendaryArtifactVanishes::
+	fadescreenswapbuffers FADE_TO_BLACK
+	removeobject VAR_LAST_TALKED
+	fadescreenswapbuffers FADE_FROM_BLACK
+	msgbox gText_LegendaryArtifactVanishes, MSGBOX_DEFAULT
+	release
+	end
+
+Common_EventScript_LegendaryArtifactFades::
+	fadescreenswapbuffers FADE_TO_BLACK
+	removeobject VAR_LAST_TALKED
+	fadescreenswapbuffers FADE_FROM_BLACK
+	msgbox gText_LegendaryArtifactFades, MSGBOX_DEFAULT
 	release
 	end
 
