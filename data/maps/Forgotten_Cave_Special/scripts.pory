@@ -1,5 +1,6 @@
 mapscripts Forgotten_Cave_Special_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
+        setvar(VAR_FORGOTTEN_CAVE_SPECIAL_WILD_SET, 0)
         call_if_unset(FLAG_DEFEATED_MEWTWO, ShowMewtwo)
         call_if_unset(FLAG_DEFEATED_CELEBI, ShowCelebi)
         call_if_unset(FLAG_DEFEATED_JIRACHI, ShowJirachi)
@@ -80,4 +81,21 @@ script FightJirachi {
         goto(Common_EventScript_LegendaryArtifactFades)
         end
     }
+}
+
+script TriggerWildPkmnMewtwo {
+    setvar(VAR_FORGOTTEN_CAVE_SPECIAL_WILD_SET, 0)
+    releaseall
+    end
+}
+
+script TriggerWildPkmnJirachi {
+    setvar(VAR_FORGOTTEN_CAVE_SPECIAL_WILD_SET, 1)
+    releaseall
+    end
+}
+script TriggerWildPkmnCelebi {
+    setvar(VAR_FORGOTTEN_CAVE_SPECIAL_WILD_SET, 2)
+    releaseall
+    end
 }

@@ -4,21 +4,21 @@ Forgotten_Cave_Entrance_MapScripts::
 
 AncientText1::
 	lock
-	msgbox AncientText1_Text_0
+	msgbox AncientText1_Text_0, MSGBOX_AUTOCLOSE
 	release
 	end
 
 
 AncientText2::
 	lock
-	msgbox AncientText2_Text_0
+	msgbox AncientText2_Text_0, MSGBOX_AUTOCLOSE
 	release
 	end
 
 
 AncientText3::
 	lock
-	msgbox AncientText3_Text_0
+	msgbox AncientText3_Text_0, MSGBOX_AUTOCLOSE
 	release
 	end
 

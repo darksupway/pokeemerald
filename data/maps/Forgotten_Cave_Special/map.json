@@ -25,8 +25,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Forgotten_Cave_Special_EventScript_ItemUltraBall",
-      "flag": "FLAG_ITEM_FORGOTTEN_CAVE_SPECIAL_ULTRA_BALL",
-      "item": "ultraball"
+      "flag": "FLAG_ITEM_FORGOTTEN_CAVE_SPECIAL_ULTRA_BALL"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
@@ -94,6 +93,45 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "FightMewtwo",
       "flag": "FLAG_HIDE_MEWTWO"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "x": 15,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_RockSmash",
+      "flag": "FLAG_TEMP_11"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "x": 8,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_RockSmash",
+      "flag": "FLAG_TEMP_13"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "x": 9,
+      "y": 11,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_RockSmash",
+      "flag": "FLAG_TEMP_12"
     }
   ],
   "warp_events": [
@@ -116,7 +154,7 @@
     {
       "type": "weather",
       "x": 10,
-      "y": 23,
+      "y": 25,
       "elevation": 3,
       "weather": "COORD_EVENT_WEATHER_RAIN"
     },
@@ -130,7 +168,7 @@
     {
       "type": "weather",
       "x": 10,
-      "y": 24,
+      "y": 26,
       "elevation": 3,
       "weather": "COORD_EVENT_WEATHER_SHADE"
     },
@@ -147,6 +185,42 @@
       "y": 47,
       "elevation": 0,
       "weather": "COORD_EVENT_WEATHER_SHADE"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 25,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "TriggerWildPkmnJirachi"
+    },
+    {
+      "type": "trigger",
+      "x": 43,
+      "y": 25,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "TriggerWildPkmnCelebi"
+    },
+    {
+      "type": "trigger",
+      "x": 43,
+      "y": 26,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "TriggerWildPkmnMewtwo"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 26,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "TriggerWildPkmnMewtwo"
     }
   ],
   "bg_events": [

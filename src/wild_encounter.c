@@ -305,7 +305,8 @@ static u16 GetCurrentMapWildMonHeaderId(void)
 
         if (gWildMonHeaders[i].mapGroup == gSaveBlock1Ptr->location.mapGroup &&
             gWildMonHeaders[i].mapNum == gSaveBlock1Ptr->location.mapNum)
-        {
+        {   // if player is in AlteringCave: increments pos in gWildMonHeaders by
+            // VAR value (to choose from multiple tables)
             if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ALTERING_CAVE) &&
                 gSaveBlock1Ptr->location.mapNum == MAP_NUM(ALTERING_CAVE))
             {
@@ -314,6 +315,16 @@ static u16 GetCurrentMapWildMonHeaderId(void)
                     alteringCaveId = 0;
 
                 i += alteringCaveId;
+            }
+
+            if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(FORGOTTEN_CAVE_SPECIAL) &&
+                gSaveBlock1Ptr->location.mapNum == MAP_NUM(FORGOTTEN_CAVE_SPECIAL))
+            {
+                u16 forgottenCaveSpecialId = VarGet(VAR_FORGOTTEN_CAVE_SPECIAL_WILD_SET);
+                if (forgottenCaveSpecialId > 2)
+                    forgottenCaveSpecialId = 0;
+
+                i += forgottenCaveSpecialId;
             }
 
             return i;
