@@ -674,6 +674,8 @@ u8 BattleSetup_GetTerrainId(void)
         if (MetatileBehavior_IsSurfableWaterOrUnderwater(tileBehavior))
             return BATTLE_TERRAIN_POND;
         return BATTLE_TERRAIN_CAVE;
+    case MAP_TYPE_SNOW:
+        return BATTLE_TERRAIN_SNOW;
     case MAP_TYPE_INDOOR:
     case MAP_TYPE_SECRET_BASE:
         return BATTLE_TERRAIN_BUILDING;
