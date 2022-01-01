@@ -402,8 +402,12 @@ static void WaitForVBlank(void)
 {
     gMain.intrCheck &= ~INTR_FLAG_VBLANK;
 
+    /* Wastes CPU cycles to wait for VBlank. Solution below.
     while (!(gMain.intrCheck & INTR_FLAG_VBLANK))
         ;
+    */
+
+    asm("swi 0x5");
 }
 
 void SetTrainerHillVBlankCounter(u32 *counter)
