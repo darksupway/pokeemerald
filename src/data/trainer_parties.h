@@ -11640,6 +11640,51 @@ static const struct TrainerMonItemCustomMoves sParty_Steven[] = {
     }
 };
 
+static const struct TrainerMonItemCustomMoves sParty_MysteryMan[] = {
+    {
+    .iv = 255,
+    .lvl = 84,
+    .species = SPECIES_DRAGONITE,
+    .heldItem = ITEM_FOCUS_BAND,
+    .moves = {MOVE_OUTRAGE, MOVE_DRAGON_CLAW, MOVE_AERIAL_ACE, MOVE_DRAGON_DANCE}
+    },
+    {
+    .iv = 255,
+    .lvl = 83,
+    .species = SPECIES_VENUSAUR,
+    .heldItem = ITEM_MIRACLE_SEED,
+    .moves = {MOVE_SOLAR_BEAM, MOVE_RAZOR_LEAF, MOVE_TOXIC, MOVE_SYNTHESIS}
+    },
+    {
+    .iv = 255,
+    .lvl = 86,
+    .species = SPECIES_FERALIGATR,
+    .heldItem = ITEM_QUICK_CLAW,
+    .moves = {MOVE_HYDRO_PUMP, MOVE_SURF, MOVE_SLASH, MOVE_SWORDS_DANCE}
+    },
+    {
+    .iv = 255,
+    .lvl = 88,
+    .species = SPECIES_BLAZIKEN,
+    .heldItem = ITEM_WHITE_HERB,
+    .moves = {MOVE_OVERHEAT, MOVE_FLAMETHROWER, MOVE_SKY_UPPERCUT, MOVE_BULK_UP}
+    },
+    {
+    .iv = 255,
+    .lvl = 85,
+    .species = SPECIES_TYRANITAR,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_EARTHQUAKE, MOVE_HYPER_BEAM, MOVE_CRUNCH, MOVE_ROCK_SLIDE}
+    },
+    {
+    .iv = 255,
+    .lvl = 90,
+    .species = SPECIES_JYNX,
+    .heldItem = ITEM_BRIGHT_POWDER,
+    .moves = {MOVE_BLIZZARD, MOVE_PERISH_SONG, MOVE_ICE_PUNCH, MOVE_LOVELY_KISS}
+    }
+};
+
 static const struct TrainerMonNoItemDefaultMoves sParty_Anabel[] = {
     {
     .iv = 0,

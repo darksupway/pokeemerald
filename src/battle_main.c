@@ -453,7 +453,7 @@ const u8 gTypeNames[NUMBER_OF_MON_TYPES][TYPE_NAME_LENGTH + 1] =
     [TYPE_DARK] = _("DARK"),
 };
 
-// This is a factor in how much money you get for beating a trainer.
+// This is a factor in how much money you get for beating a trainer. Payout = factor * (4 P$) * (Lvl last Pokemon in Team)
 const struct TrainerMoney gTrainerMoneyTable[] =
 {
     {TRAINER_CLASS_TEAM_AQUA, 5},
@@ -511,6 +511,7 @@ const struct TrainerMoney gTrainerMoneyTable[] =
     {TRAINER_CLASS_HIKER, 10},
     {TRAINER_CLASS_YOUNG_COUPLE, 8},
     {TRAINER_CLASS_WINSTRATE, 10},
+    {TRAINER_CLASS_MYSTERYMAN, 138},
     {0xFF, 5}, // Any trainer class not listed above uses this
 };
 
@@ -4955,6 +4956,7 @@ static void HandleEndTurn_BattleWon(void)
         {
         case TRAINER_CLASS_ELITE_FOUR:
         case TRAINER_CLASS_CHAMPION:
+        case TRAINER_CLASS_MYSTERYMAN:
             PlayBGM(MUS_VICTORY_LEAGUE);
             break;
         case TRAINER_CLASS_TEAM_AQUA:

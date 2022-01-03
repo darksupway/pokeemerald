@@ -1,0 +1,28 @@
+script MysteryManIntroduction {
+    lockall
+    faceplayer
+    msgbox(MysteryManIntroduction_Text, MSGBOX_AUTOCLOSE)
+
+    fadescreenswapbuffers(FADE_TO_BLACK)
+	removeobject(VAR_LAST_TALKED)
+	fadescreenswapbuffers(FADE_FROM_BLACK)
+
+    setflag(FLAG_HIDE_MYSTERY_MAN_RECEPTION)
+    clearflag(FLAG_HIDE_MYSTERY_MAN_LOUNGE2)
+    setvar(VAR_MYSTERY_MAN_STATE, 1)
+
+    releaseall
+    end
+}
+
+text MysteryManIntroduction_Text {
+    "Oh, Hello there.\n"
+    "Aren't you Hoenns new\l"
+    "Champion, {PLAYER}?\p"
+
+    "You know what? I have some\n"
+    "special gifts for you.\p"
+
+    "Find me again in other places\n"
+    "around here and you can have them."
+}

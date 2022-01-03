@@ -464,6 +464,7 @@ gStdScripts_End::
 	.include "data/maps/SafariZone_Southwest/scripts.inc"
 	.include "data/maps/SafariZone_South/scripts.inc"
 	.include "data/maps/BattleFrontier_OutsideWest/scripts.inc"
+	.include "data/maps/BattleFrontier_OutsideWest/scripts_new.inc"
 	.include "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc"
 	.include "data/maps/BattleFrontier_BattleTowerElevator/scripts.inc"
 	.include "data/maps/BattleFrontier_BattleTowerCorridor/scripts.inc"
@@ -474,6 +475,7 @@ gStdScripts_End::
 	.include "data/maps/SafariZone_Northeast/scripts.inc"
 	.include "data/maps/SafariZone_Southeast/scripts.inc"
 	.include "data/maps/BattleFrontier_OutsideEast/scripts.inc"
+	.include "data/maps/BattleFrontier_OutsideEast/scripts_new.inc"
 	.include "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc"
 	.include "data/maps/BattleFrontier_BattleTowerMultiCorridor/scripts.inc"
 	.include "data/maps/BattleFrontier_BattleTowerMultiBattleRoom/scripts.inc"
@@ -503,13 +505,16 @@ gStdScripts_End::
 	.include "data/maps/BattleFrontier_Lounge1/scripts.inc"
 	.include "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.inc"
 	.include "data/maps/BattleFrontier_Lounge2/scripts.inc"
+	.include "data/maps/BattleFrontier_Lounge2/scripts_new.inc"
 	.include "data/maps/BattleFrontier_Lounge3/scripts.inc"
 	.include "data/maps/BattleFrontier_Lounge4/scripts.inc"
 	.include "data/maps/BattleFrontier_ScottsHouse/scripts.inc"
 	.include "data/maps/BattleFrontier_Lounge5/scripts.inc"
 	.include "data/maps/BattleFrontier_Lounge6/scripts.inc"
+	.include "data/maps/BattleFrontier_Lounge6/scripts_new.inc"
 	.include "data/maps/BattleFrontier_Lounge7/scripts.inc"
 	.include "data/maps/BattleFrontier_ReceptionGate/scripts.inc"
+	.include "data/maps/BattleFrontier_ReceptionGate/scripts_new.inc"
 	.include "data/maps/BattleFrontier_Lounge8/scripts.inc"
 	.include "data/maps/BattleFrontier_Lounge9/scripts.inc"
 	.include "data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc"
@@ -996,6 +1001,22 @@ Common_EventScript_RemoveStaticPokemon::
 	fadescreenswapbuffers FADE_FROM_BLACK
 	release
 	end
+
+Common_EventScript_MysteryMan_NoBagSpace::
+	msgbox gText_MysteryMan_NoBagSpace, MSGBOX_AUTOCLOSE
+	setflag FLAG_MYSTERY_MAN_BAG_FULL
+	releaseall
+	end
+
+gText_MysteryMan_NoBagSpace::
+	.string "Oh, I'm sorry, {PLAYER}.\n"
+	.string "Your BAG's KEY ITEMS POCKET is full.\p"
+	.string "Please store something on your PC,\n"
+	.string "then come back for this.$"
+
+gText_MysteryMan_Return::
+	.string "There you are!\n"
+	.string "Do you have space now?$"
 
 Common_EventScript_LegendaryArtifactVanishes::
 	fadescreenswapbuffers FADE_TO_BLACK

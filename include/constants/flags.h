@@ -456,8 +456,8 @@
 #define FLAG_REMATCH_DRAKE                   0x1A8
 #define FLAG_REMATCH_WALLACE                 0x1A9
 
-#define FLAG_UNUSED_0x1AA                    0x1AA // Unused Flag
-#define FLAG_UNUSED_0x1AB                    0x1AB // Unused Flag
+#define FLAG_MYSTERY_MAN_BAG_FULL            0x1AA
+#define FLAG_HIDE_MYSTERY_MAN_LAST           0x1AB
 
 #define FLAG_DEFEATED_DEOXYS                 0x1AC
 #define FLAG_BATTLED_DEOXYS                  0x1AD
@@ -512,12 +512,12 @@
 #define FLAG_DEFEATED_HO_OH                  0x1DC
 #define FLAG_DEFEATED_LUGIA                  0x1DD
 
-#define FLAG_UNUSED_0x1DE                    0x1DE // Unused Flag
-#define FLAG_UNUSED_0x1DF                    0x1DF // Unused Flag
-#define FLAG_UNUSED_0x1E0                    0x1E0 // Unused Flag
-#define FLAG_UNUSED_0x1E1                    0x1E1 // Unused Flag
-#define FLAG_UNUSED_0x1E2                    0x1E2 // Unused Flag
-#define FLAG_UNUSED_0x1E3                    0x1E3 // Unused Flag
+#define FLAG_HIDE_MYSTERY_MAN_RECEPTION             0x1DE
+#define FLAG_HIDE_MYSTERY_MAN_ABOVE_BATTLE_DOME     0x1DF
+#define FLAG_HIDE_MYSTERY_MAN_LOUNGE2               0x1E0
+#define FLAG_HIDE_MYSTERY_MAN_LOUNGE6               0x1E1
+#define FLAG_HIDE_MYSTERY_MAN_FRONT_OF_LOUNGE5      0x1E2
+#define FLAG_HIDE_MYSTERY_MAN_FORGOTTEN_CAVE        0x1E3
 
 // Mystery Gift Flags (Unknown)
 #define FLAG_MYSTERY_GIFT_DONE               0x1E4

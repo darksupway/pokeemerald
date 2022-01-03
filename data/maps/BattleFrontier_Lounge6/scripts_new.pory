@@ -1,0 +1,70 @@
+script MysteryManEonTicket {
+    lockall
+    faceplayer
+    
+    if (!flag(FLAG_MYSTERY_MAN_BAG_FULL)) {
+        if (var(VAR_ROAMER_POKEMON) == 0) {
+            bufferstring(STR_VAR_1, "RED")
+        } else {
+            bufferstring(STR_VAR_1, "BLUE")
+        }
+        msgbox(MysteryManEonTicket_Text, MSGBOX_DEFAULT)
+    } else {
+        msgbox(gText_MysteryMan_Return, MSGBOX_DEFAULT)
+    }
+    
+    checkitem(ITEM_EON_TICKET)
+    if (var(VAR_RESULT) == TRUE) {
+        msgbox(MysteryManEonTicket_HasTicketAlready, MSGBOX_AUTOCLOSE)
+    } else {
+        checkitemspace(ITEM_EON_TICKET)
+        if (var(VAR_RESULT) == FALSE) {
+            goto(Common_EventScript_MysteryMan_NoBagSpace)
+        }
+
+        giveitem(ITEM_EON_TICKET)
+        setflag(FLAG_ENABLE_SHIP_SOUTHERN_ISLAND)
+        setvar(VAR_DISTRIBUTE_EON_TICKET, 0)
+        
+        msgbox(MysteryManEonTicket_Obtained_Text, MSGBOX_AUTOCLOSE)
+    }
+
+    clearflag(FLAG_MYSTERY_MAN_BAG_FULL)
+
+    fadescreenswapbuffers(FADE_TO_BLACK)
+	removeobject(VAR_LAST_TALKED)
+	fadescreenswapbuffers(FADE_FROM_BLACK)
+
+    setflag(FLAG_HIDE_MYSTERY_MAN_LOUNGE6)
+    clearflag(FLAG_HIDE_MYSTERY_MAN_ABOVE_BATTLE_DOME)
+    setvar(VAR_MYSTERY_MAN_STATE, 4)
+
+    releaseall
+    end
+}
+
+text MysteryManEonTicket_Text {
+    "Ah, you're here!\n"
+	"Did you enjoy some wilderness on\l"
+	"the FARAWAY ISLAND?\p"
+	"Oh right, do you remember that\n"
+	"news report some time ago?\p"
+	"You know, the one about that\n"
+	"{STR_VAR_1} Pokemon?\p"
+	"Ok, enough about that. Here!"
+}
+
+text MysteryManEonTicket_Obtained_Text {
+    "Now there is only one ticket left.\p"
+    "This time, only come back to me\n"
+    "once you used all the tickets and\l"
+    "meet the Pokemon in those places.\p"
+    "Until then!"
+}
+
+text MysteryManEonTicket_HasTicketAlready {
+    "Oh... It seems you already have\n"
+    "an EON TICKET.\p"
+    "In that case, I'll just go to the\n"
+    "next location. Bye!"
+}

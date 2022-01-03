@@ -1,1 +1,70 @@
-mapscripts Forgotten_Cave_Sea_MapScripts {}
+mapscripts Forgotten_Cave_Sea_MapScripts {
+    MAP_SCRIPT_ON_LOAD {
+        if (var(VAR_MYSTERY_MAN_STATE) >= 5) {
+            setmetatile(12, 2, 0x20B, TRUE)
+            setmetatile(12, 3, 0x213, TRUE)
+            setmetatile(13, 2, 0x20C, TRUE)
+            setmetatile(13, 3, 0x214, FALSE)
+            setmetatile(14, 2, 0x20D, TRUE)
+            setmetatile(14, 3, 0x215, TRUE)
+            end
+        }
+    }
+}
+
+script MysteryManForgottenCave {
+    lockall
+    faceplayer
+
+    if ((flag(FLAG_CAUGHT_HO_OH) || flag(FLAG_DEFEATED_HO_OH)) &&
+        (flag(FLAG_CAUGHT_LUGIA) || flag(FLAG_DEFEATED_LUGIA)))
+    {
+        goto(MysteryManForgottenCave_DefeatedHoohLugia)
+    } else {
+        goto(MysteryManForgottenCave_ComeBackAfterHoohLugia)
+    }
+}
+
+script MysteryManForgottenCave_DefeatedHoohLugia {
+    msgbox(MysteryManForgottenCave_DefeatedHoohLugia_Text, MSGBOX_AUTOCLOSE)
+    setvar(VAR_MYSTERY_MAN_STATE, 6)
+
+    fadescreenswapbuffers(FADE_TO_BLACK)
+	removeobject(VAR_LAST_TALKED)
+	fadescreenswapbuffers(FADE_FROM_BLACK)
+
+    setflag(FLAG_HIDE_MYSTERY_MAN_FORGOTTEN_CAVE)
+    clearflag(FLAG_HIDE_MYSTERY_MAN_LAST)
+    setvar(VAR_MYSTERY_MAN_STATE, 6)
+
+    releaseall
+    end
+}
+
+script MysteryManForgottenCave_ComeBackAfterHoohLugia {
+    msgbox(MysteryManForgottenCave_ComeBackAfterHoohLugia_Text, MSGBOX_AUTOCLOSE)
+    releaseall
+    end
+}
+
+text MysteryManForgottenCave_DefeatedHoohLugia_Text {
+    "Oh, so you did it, right?\n"
+    "Good. In this cave lies your\l"
+    "last challenge.\l"
+    "Go ahead if you are ready.\p"
+    "After this, if we ever\n"
+    "meet again...\p"
+    "Well, I guess if it's you,\n"
+    "you'll find out.\p"
+    "If you want to find me again,\n"
+    "there is this strange cave that\l"
+    "opened up recently on ROUTE 103...\p"
+    "Farewell!"
+}
+
+text MysteryManForgottenCave_ComeBackAfterHoohLugia_Text {
+    "...\n"
+    "Not yet, huh?\p"
+    "You have not forgotten the last\n"
+    "ticket have you?"
+}
