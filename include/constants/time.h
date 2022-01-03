@@ -1,0 +1,7 @@
+#ifndef GUARD_CONSTANTS_TIME_H
+#define GUARD_CONSTANTS_TIME_H
+
+#define DAY_START   6
+#define NIGHT_START 18
+
+#endif // GUARD_CONSTANTS_TIME_H
