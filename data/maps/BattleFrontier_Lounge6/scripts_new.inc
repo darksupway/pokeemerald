@@ -48,10 +48,10 @@ MysteryManEonTicket_14:
 
 
 MysteryManEonTicket_Text_0:
-	.string "RED$"
+	.string "{COLOR RED}{SHADOW LIGHT_RED}RED{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}$"
 
 MysteryManEonTicket_Text_1:
-	.string "BLUE$"
+	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}BLUE{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}$"
 
 MysteryManEonTicket_Text::
 	.string "Ah, you're here!\n"

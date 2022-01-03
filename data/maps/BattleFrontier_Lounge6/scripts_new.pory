@@ -4,9 +4,9 @@ script MysteryManEonTicket {
     
     if (!flag(FLAG_MYSTERY_MAN_BAG_FULL)) {
         if (var(VAR_ROAMER_POKEMON) == 0) {
-            bufferstring(STR_VAR_1, "RED")
+            bufferstring(STR_VAR_1, "{COLOR RED}{SHADOW LIGHT_RED}RED{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}")
         } else {
-            bufferstring(STR_VAR_1, "BLUE")
+            bufferstring(STR_VAR_1, "{COLOR BLUE}{SHADOW LIGHT_BLUE}BLUE{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}")
         }
         msgbox(MysteryManEonTicket_Text, MSGBOX_DEFAULT)
     } else {
