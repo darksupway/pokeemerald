@@ -902,6 +902,11 @@ u8 ItemId_GetHoldEffectParam(u16 itemId)
     return gItems[SanitizeItemId(itemId)].holdEffectParam;
 }
 
+void RenewRepelSteps()
+{
+    VarSet(VAR_REPEL_STEP_COUNT, ItemId_GetHoldEffectParam(VarGet(VAR_REPEL_LAST_USED)));
+}
+
 const u8 *ItemId_GetDescription(u16 itemId)
 {
     return gItems[SanitizeItemId(itemId)].description;
