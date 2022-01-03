@@ -4,10 +4,10 @@ Forgotten_Cave_Sea_MapScripts::
 
 Forgotten_Cave_Sea_MapScripts_MAP_SCRIPT_ON_LOAD:
 	compare VAR_MYSTERY_MAN_STATE, 5
-	goto_if_ge Forgotten_Cave_Sea_MapScripts_MAP_SCRIPT_ON_LOAD_1
-	return
+	goto_if_ge Forgotten_Cave_Sea_MapScripts_MAP_SCRIPT_ON_LOAD_2
+	end
 
-Forgotten_Cave_Sea_MapScripts_MAP_SCRIPT_ON_LOAD_1:
+Forgotten_Cave_Sea_MapScripts_MAP_SCRIPT_ON_LOAD_2:
 	setmetatile 12, 2, 0x20B, TRUE
 	setmetatile 12, 3, 0x213, TRUE
 	setmetatile 13, 2, 0x20C, TRUE

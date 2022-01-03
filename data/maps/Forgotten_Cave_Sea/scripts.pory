@@ -9,6 +9,7 @@ mapscripts Forgotten_Cave_Sea_MapScripts {
             setmetatile(14, 3, 0x215, TRUE)
             end
         }
+        end
     }
 }
 
