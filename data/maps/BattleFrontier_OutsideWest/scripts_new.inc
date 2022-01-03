@@ -53,7 +53,8 @@ MysteryManMysticTicket_DefeatedOtherLegendaries_2:
 	goto MysteryManMysticTicket_DefeatedOtherLegendaries_1
 
 MysteryManMysticTicket_DefeatedOtherLegendaries_6:
-	msgbox MysteryManMysticTicket_HasTicketAlready, MSGBOX_AUTOCLOSE
+	msgbox MysteryManMysticTicket_HasTicketAlready, MSGBOX_DEFAULT
+	msgbox MysteryManMysticTicket_Obtained_Text, MSGBOX_AUTOCLOSE
 	goto MysteryManMysticTicket_DefeatedOtherLegendaries_5
 
 MysteryManMysticTicket_DefeatedOtherLegendaries_10:
@@ -98,4 +99,4 @@ MysteryManMysticTicket_HasTicketAlready::
 	.string "Oh... It seems you already have\n"
 	.string "a MYSTIC TICKET.\p"
 	.string "In that case, I'll just go to the\n"
-	.string "next location. Bye!$"
+	.string "next location.$"

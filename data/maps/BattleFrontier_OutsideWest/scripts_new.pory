@@ -21,7 +21,8 @@ script MysteryManMysticTicket_DefeatedOtherLegendaries {
     
     checkitem(ITEM_MYSTIC_TICKET)
     if (var(VAR_RESULT) == TRUE) {
-        msgbox(MysteryManMysticTicket_HasTicketAlready, MSGBOX_AUTOCLOSE)
+        msgbox(MysteryManMysticTicket_HasTicketAlready, MSGBOX_DEFAULT)
+        msgbox(MysteryManMysticTicket_Obtained_Text, MSGBOX_AUTOCLOSE)
     } else {
         checkitemspace(ITEM_MYSTIC_TICKET)
         if (var(VAR_RESULT) == FALSE) {
@@ -89,5 +90,5 @@ text MysteryManMysticTicket_HasTicketAlready {
     "Oh... It seems you already have\n"
     "a MYSTIC TICKET.\p"
     "In that case, I'll just go to the\n"
-    "next location. Bye!"
+    "next location."
 }
