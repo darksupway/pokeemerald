@@ -50,7 +50,7 @@ MysteryManAuroraTicket_Text::
 MysteryManAuroraTicket_Obtained_Text::
 	.string "That's the first of four special\n"
 	.string "tickets.\p"
-	.string "Have you heard of a Pokemon that\n"
+	.string "Have you heard of a POKéMON that\n"
 	.string "came from outer space?\l"
 	.string "Well if not just use this ticket\l"
 	.string "at the LILYCOVE CITY port.\p"

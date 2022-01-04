@@ -18,7 +18,7 @@ script MysteryManIntroduction {
 text MysteryManIntroduction_Text {
     "Oh, Hello there.\n"
     "Aren't you Hoenns new\l"
-    "Champion, {PLAYER}?\p"
+    "CHAMPION, {PLAYER}?\p"
 
     "You know what? I have some\n"
     "special gifts for you.\p"

@@ -60,14 +60,14 @@ MysteryManEonTicket_Text::
 	.string "Oh right, do you remember that\n"
 	.string "news report some time ago?\p"
 	.string "You know, the one about that\n"
-	.string "{STR_VAR_1} Pokemon?\p"
+	.string "{STR_VAR_1} POKéMON?\p"
 	.string "Ok, enough about that. Here!$"
 
 MysteryManEonTicket_Obtained_Text::
 	.string "Now there is only one ticket left.\p"
 	.string "This time, only come back to me\n"
 	.string "once you used all the tickets and\l"
-	.string "meet the Pokemon in those places.\p"
+	.string "meet the POKéMON in those places.\p"
 	.string "Until then!$"
 
 MysteryManEonTicket_HasTicketAlready::

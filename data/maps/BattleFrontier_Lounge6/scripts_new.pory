@@ -50,7 +50,7 @@ text MysteryManEonTicket_Text {
 	"Oh right, do you remember that\n"
 	"news report some time ago?\p"
 	"You know, the one about that\n"
-	"{STR_VAR_1} Pokemon?\p"
+	"{STR_VAR_1} POKéMON?\p"
 	"Ok, enough about that. Here!"
 }
 
@@ -58,7 +58,7 @@ text MysteryManEonTicket_Obtained_Text {
     "Now there is only one ticket left.\p"
     "This time, only come back to me\n"
     "once you used all the tickets and\l"
-    "meet the Pokemon in those places.\p"
+    "meet the POKéMON in those places.\p"
     "Until then!"
 }
 

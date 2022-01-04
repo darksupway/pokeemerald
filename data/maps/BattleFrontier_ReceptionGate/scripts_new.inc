@@ -15,7 +15,7 @@ MysteryManIntroduction::
 MysteryManIntroduction_Text::
 	.string "Oh, Hello there.\n"
 	.string "Aren't you Hoenns new\l"
-	.string "Champion, {PLAYER}?\p"
+	.string "CHAMPION, {PLAYER}?\p"
 	.string "You know what? I have some\n"
 	.string "special gifts for you.\p"
 	.string "Find me again in other places\n"

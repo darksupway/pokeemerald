@@ -72,8 +72,8 @@ MysteryManMysticTicket_Text::
 	.string "Ah, you are here.\n"
 	.string "...\p"
 	.string "So what do you think after\n"
-	.string "becoming a Champion and meeting\l"
-	.string "all sorts of Pokemon?\p"
+	.string "becoming a CHAMPION and meeting\l"
+	.string "all sorts of POKéMON?\p"
 	.string "Are you satisfied? Or are you\n"
 	.string "searching for more challenges?\p"
 	.string "Here, the last ticket I have for\n"
@@ -82,7 +82,7 @@ MysteryManMysticTicket_Text::
 MysteryManMysticTicket_ComeBackAfterTickets_Text::
 	.string "Hmm...\p"
 	.string "It seems you have neither caught\n"
-	.string "nor defeated the Pokemon on\l"
+	.string "nor defeated the POKéMON on\l"
 	.string "the islands.\p"
 	.string "Come back after doing that.$"
 

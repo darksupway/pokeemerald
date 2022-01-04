@@ -60,8 +60,8 @@ text MysteryManMysticTicket_Text {
     "Ah, you are here.\n"
     "...\p"
     "So what do you think after\n"
-    "becoming a Champion and meeting\l"
-    "all sorts of Pokemon?\p"
+    "becoming a CHAMPION and meeting\l"
+    "all sorts of POKéMON?\p"
     "Are you satisfied? Or are you\n"
     "searching for more challenges?\p"
     "Here, the last ticket I have for\n"
@@ -71,7 +71,7 @@ text MysteryManMysticTicket_Text {
 text MysteryManMysticTicket_ComeBackAfterTickets_Text {
     "Hmm...\p"
     "It seems you have neither caught\n"
-    "nor defeated the Pokemon on\l"
+    "nor defeated the POKéMON on\l"
     "the islands.\p"
     "Come back after doing that."
 }
