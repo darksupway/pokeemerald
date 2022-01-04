@@ -1,13 +1,135 @@
+raw`
+    .set LOCALID_ENIGMA_BERRY, 2
+`
+
 mapscripts AlteringCave_MapScripts {
+    MAP_SCRIPT_ON_LOAD {
+        if (flag(FLAG_DEFEATED_METEOR_FALLS_STEVEN)) {
+            setmetatile(7, 1, 0x235, 0x1)
+            end
+        }
+        end
+    }
     MAP_SCRIPT_ON_TRANSITION {
         setflag(FLAG_LANDMARK_ALTERING_CAVE)
+        setvar(VAR_ALTERING_CAVE_WILD_SET, 0)
+        if (!flag(FLAG_HIDE_MYSTERY_MAN_LAST)) {
+            setflag(FLAG_ITEM_ALTERING_CAVE_ENIGMA_BERRY)
+            end
+        }
+        end
     }
+}
+
+script AlteringCave_WallAncient {
+    lock
+    msgbox(AlteringCave_WallAncient_Text, MSGBOX_SIGN)
+    release
+    end
+}
+
+script AlteringCave_WallMysteryMan {
+    lock
+    msgbox(AlteringCave_WallMysteryMan_Text, MSGBOX_SIGN)
+    release
+    end
+}
+
+// 1 - wildset 2 (Grass starter)
+// 2 - wildset 3 (Fire starter)
+// 3 - wildset 4 (Water starter)
+// 4 - wildset 5 (Caterpie, Weedle, Rattata)
+// 5 - wildset 6 (Ekans, Venonat, Tangela)
+// 6 - wildset 7 (Drowzee, Mr. Mime, Gastly)
+// 7 - wildset 8 (Farfetch'd, Lickitung, Dunsparce, Sentret)
+// 8 - wildset 9 (Unown [SPECIES_UNOWN])
+script AlteringCave_ChangeToWildset2 {
+    lock
+    call(AlteringCave_ChangeWildset_AskToChange)
+    setvar(VAR_ALTERING_CAVE_WILD_SET, 1)
+    goto(AlteringCave_ChangeWildset)
+}
+
+script AlteringCave_ChangeToWildset3 {
+    lock
+    call(AlteringCave_ChangeWildset_AskToChange)
+    setvar(VAR_ALTERING_CAVE_WILD_SET, 2)
+    goto(AlteringCave_ChangeWildset)
+}
+
+script AlteringCave_ChangeToWildset4 {
+    lock
+    call(AlteringCave_ChangeWildset_AskToChange)
+    setvar(VAR_ALTERING_CAVE_WILD_SET, 3)
+    goto(AlteringCave_ChangeWildset)
+}
+
+script AlteringCave_ChangeToWildset5 {
+    lock
+    call(AlteringCave_ChangeWildset_AskToChange)
+    setvar(VAR_ALTERING_CAVE_WILD_SET, 4)
+    goto(AlteringCave_ChangeWildset)
+}
+
+script AlteringCave_ChangeToWildset6 {
+    lock
+    call(AlteringCave_ChangeWildset_AskToChange)
+    setvar(VAR_ALTERING_CAVE_WILD_SET, 5)
+    goto(AlteringCave_ChangeWildset)
+}
+
+script AlteringCave_ChangeToWildset7 {
+    lock
+    call(AlteringCave_ChangeWildset_AskToChange)
+    setvar(VAR_ALTERING_CAVE_WILD_SET, 6)
+    goto(AlteringCave_ChangeWildset)
+}
+
+script AlteringCave_ChangeToWildset8 {
+    lock
+    call(AlteringCave_ChangeWildset_AskToChange)
+    setvar(VAR_ALTERING_CAVE_WILD_SET, 7)
+    goto(AlteringCave_ChangeWildset)
+}
+
+script AlteringCave_ChangeToWildset9 {
+    lock
+    call(AlteringCave_ChangeWildset_AskToChange)
+    setvar(VAR_ALTERING_CAVE_WILD_SET, 8)
+    goto(AlteringCave_ChangeWildset)
+}
+
+script AlteringCave_ChangeWildset_AskToChange {
+    msgbox(AlteringCave_ChangeWildset_AskToChange_Text, MSGBOX_YESNO)
+    if (var(VAR_RESULT) == NO) {
+        msgbox(AlteringCave_ChangeWildset_NoChange_Text, MSGBOX_SIGN)
+        release
+        end
+    }
+    return
+}
+
+script AlteringCave_ChangeWildset {
+    msgbox(AlteringCave_ChangeWildset_WantToChange_Text, MSGBOX_AUTOCLOSE)
+    setvar(VAR_0x8004, 1)   // vertical pan
+	setvar(VAR_0x8005, 1)   // horizontal pan
+	setvar(VAR_0x8006, 8)   // num shakes
+	setvar(VAR_0x8007, 5)   // shake delay
+	special(ShakeCamera)
+    waitstate
+
+    msgbox(AlteringCave_ChangeWildset_Text, MSGBOX_AUTOCLOSE)
+
+    release
+    end
 }
 
 script MysteryManAlteringCave {
     lock
 
     if (flag(FLAG_DEFEATED_METEOR_FALLS_STEVEN)) {
+        faceplayer
+        
         msgbox(MysteryManAlteringCave_Fight_Text, MSGBOX_YESNO)
         if (var(VAR_RESULT) == YES) {
             goto(FightMysteryMan)
@@ -28,6 +150,8 @@ script FightMysteryMan {
 
     fadescreenswapbuffers(FADE_TO_BLACK)
 	removeobject(VAR_LAST_TALKED)
+    clearflag(FLAG_ITEM_ALTERING_CAVE_ENIGMA_BERRY)
+    addobject(LOCALID_ENIGMA_BERRY)
 	fadescreenswapbuffers(FADE_FROM_BLACK)
 
     setflag(FLAG_HIDE_MYSTERY_MAN_LAST)
@@ -39,7 +163,7 @@ script FightMysteryMan {
 
 text MysteryManAlteringCave_Fight_Text {
     "...\n"
-    "Alright, let's do this...\l"
+    "Alright, let's do this.\l"
     "Are you ready, {PLAYER}?"
 }
 
@@ -51,7 +175,41 @@ text MysteryManAlteringCave_Defeated_Text {
 text MysteryManAlteringCave_ComeAfterSteven_Text {
     "...\n"
     "Oh, you're here.\p"
-    "Hmm, not yet...\n"
+    "Hmm, not yet.\n"
     "Come again after fighting stronger\l"
     "opponents."
+}
+
+text AlteringCave_ChangeWildset_AskToChange_Text {
+    "Do you want to touch the stone\n"
+    "and close your eyes?"
+}
+
+text AlteringCave_ChangeWildset_WantToChange_Text {
+    "You touch it and close your eyes."
+}
+
+text AlteringCave_ChangeWildset_NoChange_Text {
+    "You step away from the stone."
+}
+
+text AlteringCave_ChangeWildset_Text {
+    "Something seems to have changed…"
+}
+
+text AlteringCave_WallAncient_Text {
+    "On the wall, something written\n"
+    "in what seems to be an ancient\l"
+    "script can be seen.\p"
+    "Who knows what it could mean."
+}
+text AlteringCave_WallMysteryMan_Text {
+    "The text on this wall seems to\n"
+    "have been engraved just recently.\p"
+    "“FOR THE PEOPLE COMING AFTER ME.\p"
+    "TO REVEAL THE TRUTH OF THIS CAVE\n"
+    "FIND THE SPECIAL STONES, TOUCH\l"
+    "THEM AND CLOSE YOUR EYES.\p"
+    "LEAVING THE CAVE WILL RETURN\n"
+    "EVERYTHING TO HOW IT WAS.”"
 }

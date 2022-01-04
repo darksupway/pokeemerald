@@ -671,7 +671,7 @@ Sidecave_MtPyre_EventScript_ItemExpShare::
 	finditem ITEM_EXP_SHARE
 	end
 
-@ added scripts - Forgotten Cave
+@ added scripts
 ForgottenCave_Entrance_EventScript_ItemStarPiece::
 	finditem ITEM_STAR_PIECE
 	end
@@ -694,4 +694,8 @@ Forgotten_Cave_Special_EventScript_ItemNugget::
 
 Forgotten_Cave_Special_EventScript_ItemMaxRevive::
 	finditem ITEM_MAX_REVIVE
+	end
+
+Altering_Cave_EventScript_EnigmaBerry::
+	finditem ITEM_ENIGMA_BERRY
 	end

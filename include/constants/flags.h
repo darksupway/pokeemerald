@@ -1227,7 +1227,7 @@
 #define FLAG_ITEM_FORGOTTEN_CAVE_SPECIAL_NUGGET                     0x498
 #define FLAG_ITEM_FORGOTTEN_CAVE_SPECIAL_ULTRA_BALL                 0x499
 #define FLAG_ITEM_FORGOTTEN_CAVE_SPECIAL_MAX_REVIVE                 0x49A
-#define FLAG_UNUSED_0x49B                                           0x49B // Unused Flag
+#define FLAG_ITEM_ALTERING_CAVE_ENIGMA_BERRY                        0x49B
 #define FLAG_UNUSED_0x49C                                           0x49C // Unused Flag
 #define FLAG_UNUSED_0x49D                                           0x49D // Unused Flag
 #define FLAG_UNUSED_0x49E                                           0x49E // Unused Flag
