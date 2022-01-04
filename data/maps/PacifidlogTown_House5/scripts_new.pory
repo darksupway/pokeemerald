@@ -1,0 +1,24 @@
+script PacifidlogTown_House5_EventScript_MirageIslandWatcherWife {
+    lock
+	faceplayer
+
+	specialvar(VAR_RESULT, IsMirageIslandPresentBox)
+    if (var(VAR_RESULT) == TRUE) {
+        msgbox(FittingBoxPokemon_Text, MSGBOX_AUTOCLOSE)
+    } else {
+        msgbox(NoFittingBoxPokemon_Text, MSGBOX_AUTOCLOSE)
+    }
+
+    release
+    end
+}
+
+text FittingBoxPokemon_Text {
+    "Oh! I somehow feel like today\n"
+    "could be the day!"
+}
+
+text NoFittingBoxPokemon_Text {
+    "I don't think I will ever see\n"
+    "MIRAGE ISLAND again…"
+}

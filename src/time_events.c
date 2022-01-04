@@ -3,6 +3,7 @@
 #include "event_data.h"
 #include "field_weather.h"
 #include "pokemon.h"
+#include "../include/pokemon_storage_system.h" //for custom MirageIsland Check
 #include "random.h"
 #include "overworld.h"
 #include "rtc.h"
@@ -48,6 +49,20 @@ bool8 IsMirageIslandPresent(void)
         if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) && (GetMonData(&gPlayerParty[i], MON_DATA_PERSONALITY) & 0xFFFF) == rnd)
             return TRUE;
 
+    return FALSE;
+}
+
+bool8 IsMirageIslandPresentBox(void)
+{
+    u16 rnd = GetMirageRnd() >> 16;
+    int j, k;
+
+    for (j = 0; j < TOTAL_BOXES_COUNT; j++)
+        for (k = 0; k < IN_BOX_COUNT; k++)
+            if (GetBoxMonDataAt(j, k, MON_DATA_SPECIES) != SPECIES_NONE)
+                if ((GetBoxMonDataAt(j, k, MON_DATA_SPECIES) && (GetBoxMonDataAt(j, k, MON_DATA_PERSONALITY)) & 0xFFFF) == rnd)
+                    return TRUE;
+    
     return FALSE;
 }
 
