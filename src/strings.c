@@ -257,6 +257,11 @@ const u8 gText_ThePC[] = _("the PC");
 const u8 gMenuText_Select[] = _("Select");
 const u8 gMenuText_L[] = _("L Button");
 const u8 gMenuText_R[] = _("R Button");
+const u8 gMenuText_ByName[] = _("Name");
+const u8 gMenuText_ByType[] = _("Type");
+const u8 gMenuText_ByAmount[] = _("Amount");
+const u8 gMenuText_ByNumber[] = _("Number");
+const u8 gText_NothingToSort[] = _("There's nothing to sort!");
 
 const u8 *const gBagMenu_ReturnToStrings[] =
 {

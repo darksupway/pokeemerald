@@ -218,6 +218,12 @@ extern const u8 gMenuText_Give2[];
 extern const u8 gMenuText_Select[];
 extern const u8 gMenuText_L[];
 extern const u8 gMenuText_R[];
+extern const u8 gMenuText_R[];
+extern const u8 gMenuText_ByName[];
+extern const u8 gMenuText_ByType[];
+extern const u8 gMenuText_ByAmount[];
+extern const u8 gMenuText_ByNumber[];
+extern const u8 gText_NothingToSort[];
 
 extern const u8 gText_WithdrawPokemon[];
 extern const u8 gText_WithdrawMonDescription[];
