@@ -106,6 +106,10 @@ void FieldGetPlayerInput(struct FieldInput *input, u16 newKeys, u16 heldKeys)
                 input->pressedAButton = TRUE;
             if (newKeys & B_BUTTON)
                 input->pressedBButton = TRUE;
+            if (newKeys & R_BUTTON)
+                input->pressedRButton = TRUE;
+            if (newKeys & L_BUTTON)
+                input->pressedLButton = TRUE;
         }
 
         if (heldKeys & (DPAD_UP | DPAD_DOWN | DPAD_LEFT | DPAD_RIGHT))
@@ -113,11 +117,6 @@ void FieldGetPlayerInput(struct FieldInput *input, u16 newKeys, u16 heldKeys)
             input->heldDirection = TRUE;
             input->heldDirection2 = TRUE;
         }
-
-        if (newKeys & R_BUTTON)
-            input->pressedRButton = TRUE;
-        if (newKeys & L_BUTTON)
-            input->pressedLButton = TRUE;
     }
 
     if (forcedMove == FALSE)
@@ -192,7 +191,11 @@ int ProcessPlayerFieldInput(struct FieldInput *input)
         ShowStartMenu();
         return TRUE;
     }
-    if (input->pressedSelectButton && UseRegisteredKeyItemOnField() == TRUE)
+    if (input->pressedSelectButton && UseRegisteredKeyItemOnField(0))
+        return TRUE;
+    else if (input->pressedLButton && UseRegisteredKeyItemOnField(1))
+        return TRUE;
+    else if (input->pressedRButton && UseRegisteredKeyItemOnField(2))
         return TRUE;
 
     if (input->pressedRButton && input->pressedLButton && TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_MACH_BIKE | PLAYER_AVATAR_FLAG_ACRO_BIKE))
