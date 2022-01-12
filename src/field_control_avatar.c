@@ -193,9 +193,9 @@ int ProcessPlayerFieldInput(struct FieldInput *input)
     }
     if (input->pressedSelectButton && UseRegisteredKeyItemOnField(0))
         return TRUE;
-    else if (input->pressedLButton && UseRegisteredKeyItemOnField(1))
+    else if (input->pressedLButton && !input->pressedRButton && UseRegisteredKeyItemOnField(1))
         return TRUE;
-    else if (input->pressedRButton && UseRegisteredKeyItemOnField(2))
+    else if (input->pressedRButton && !input->pressedLButton && UseRegisteredKeyItemOnField(2))
         return TRUE;
 
     if (input->pressedRButton && input->pressedLButton && TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_MACH_BIKE | PLAYER_AVATAR_FLAG_ACRO_BIKE))
