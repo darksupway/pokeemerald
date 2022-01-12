@@ -1,0 +1,63 @@
+script MauvilleCity_BikeShop_EventScript_GetNewAcroBike {
+    message(MauvilleCity_BikeShop_Text_ExplainBike)
+	waitmessage
+	msgbox(MauvilleCity_BikeShop_Text_ReceivedBike, MSGBOX_DEFAULT)
+	giveitem(ITEM_ACRO_BIKE)
+	msgbox(MauvilleCity_BikeShop_Text_HowToSwapModes, MSGBOX_AUTOCLOSE)
+	release
+	end
+}
+
+script MauvilleCity_BikeShop_EventScript_HowToSwapModesReturn {
+	msgbox(MauvilleCity_BikeShop_Text_HowToSwapModesReturn, MSGBOX_AUTOCLOSE)
+	release
+	end
+}
+
+text MauvilleCity_BikeShop_Text_ExplainBike {
+    "RYDEL: Hm, hm… … … … …\p"
+	"You're saying that you came all this\n"
+	"way from LITTLEROOT?\p"
+	"My goodness!\n"
+	"That's ridiculously far!\p"
+	"If you had one of my BIKES, you could\n"
+	"go anywhere easily while feeling the\l"
+	"gentle caress of the wind!\p"
+	"I'll tell you what!\n"
+	"I'll give you a BIKE!\p"
+    "To be honest I just got a new\n"
+    "model of the ACRO BIKE.\p"
+    "This new model combines the\n"
+    "features of the former ACRO BIKE\l"
+    "and MACH BIKE.\p"
+    "The MACH BIKE was for cyclists who\n"
+	"want to feel the wind with their\l"
+	"bodies!\p"
+	"And the old ACRO BIKE was for those\n"
+	"who prefer technical rides!\p"
+	"Well, here you go!"
+}
+
+text MauvilleCity_BikeShop_Text_ReceivedBike {
+	"{PLAYER} RECEIVED a BIKE."
+}
+
+text MauvilleCity_BikeShop_Text_HowToSwapModes {
+	"RYDEL: To switch between ACRO mode\n"
+	"and MACH mode press both the\l"
+	"L- and R-BUTTON at the same time.\p"
+	"I hope you will like your new bike\n"
+	"and use it a lot!"
+}
+
+text MauvilleCity_BikeShop_Text_HowToSwapModesReturn {
+	"RYDEL: Oh, you are back!\n"
+	"Do you like the BIKE?\p"
+	"Just to make sure you remember it:\n"
+	"To switch between ACRO and MACH mode\l"
+	"press the L- and R-BUTTON at the\l"
+	"same time.\p"
+	"Well, good luck on the rest of\n"
+	"your journey and I hope you use\l"
+	"my BIKE a lot!"
+}
