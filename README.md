@@ -18,6 +18,8 @@ The focus of this decompilation is the possibility to catch every Pokémon witho
   (2-in-1 Bike used R-Button to change modi, changed to L+R)
   - [Bag sorting](https://www.pokecommunity.com/showpost.php?p=10167488&postcount=84)
   - [Soot Sack Ash Quantity](https://www.pokecommunity.com/showpost.php?p=10222284&postcount=178)
+  - remove fishing "mini-game" --> if there is a bite it automatically starts the encounter
+  - change trade evolutions to level evolutions and the ones with held items simply evolve when leveling up with the held item
 
 -----
 
