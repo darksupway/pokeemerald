@@ -398,6 +398,10 @@ MeteorFalls_B1F_2R_EventScript_ItemTM02::
 	finditem ITEM_TM02
 	end
 
+NewMauville_Inside_EventScript_ItemUpGrade::
+	finditem ITEM_UP_GRADE
+	end
+
 NewMauville_Inside_EventScript_ItemUltraBall::
 	finditem ITEM_ULTRA_BALL
 	end
