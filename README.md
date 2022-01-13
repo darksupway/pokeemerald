@@ -1,5 +1,5 @@
 # Description
-This is my version of a completionist Pokémon Emerald with some quality of life features. 
+This is my version of a completionist Pokémon Emerald with some quality of life features.  
 The focus of this decompilation is the possibility to catch every Pokémon without another game. 
 
 # Changes
@@ -14,7 +14,7 @@ The focus of this decompilation is the possibility to catch every Pokémon witho
   - repel renewal question ([wiki](https://github.com/pret/pokeemerald/wiki/Prompt-for-reusing-Repels))
   - berry seller in flower shop after hall of fame
   - script that checks PC boxes for mirage island Pokémon
-  - combined [L-/R-registered items](https://www.pokecommunity.com/showpost.php?p=10134388&postcount=56) and [2-in-1 Bike (Alterntive Take)](https://www.pokecommunity.com/showpost.php?p=10217718&postcount=172) 
+  - combined [L-/R-registered items](https://www.pokecommunity.com/showpost.php?p=10134388&postcount=56) and [2-in-1 Bike (Alterntive Take)](https://www.pokecommunity.com/showpost.php?p=10217718&postcount=172)  
   (2-in-1 Bike used R-Button to change modi, changed to L+R)
   - [Bag sorting](https://www.pokecommunity.com/showpost.php?p=10167488&postcount=84)
   - [Soot Sack Ash Quantity](https://www.pokecommunity.com/showpost.php?p=10222284&postcount=178)
