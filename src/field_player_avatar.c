@@ -1739,7 +1739,7 @@ static bool8 Fishing_GetRodOut(struct Task *task)
     };
 
     task->tRoundsPlayed = 0;
-    task->tMinRoundsRequired = minRounds1[task->tFishingRod] + (Random() % minRounds2[task->tFishingRod]);
+    task->tMinRoundsRequired = minRounds1[task->tFishingRod]; // + (Random() % minRounds2[task->tFishingRod]); <-- Only one round is needed
     task->tPlayerGfxId = gObjectEvents[gPlayerAvatar.objectEventId].graphicsId;
     playerObjEvent = &gObjectEvents[gPlayerAvatar.objectEventId];
     ObjectEventClearHeldMovementIfActive(playerObjEvent);
@@ -1871,10 +1871,15 @@ static bool8 Fishing_WaitForA(struct Task *task)
 
     AlignFishingAnimationFrames();
     task->tFrameCounter++;
+    task->tStep++;
+    
+    /* Removed, so that no promt is required
     if (task->tFrameCounter >= reelTimeouts[task->tFishingRod])
         task->tStep = FISHING_GOT_AWAY;
     else if (JOY_NEW(A_BUTTON))
         task->tStep++;
+    */
+
     return FALSE;
 }
 
@@ -1890,6 +1895,7 @@ static bool8 Fishing_CheckMoreDots(struct Task *task)
 
     AlignFishingAnimationFrames();
     task->tStep++;
+    /* Remove possibility for another round
     if (task->tRoundsPlayed < task->tMinRoundsRequired)
     {
         task->tStep = FISHING_START_ROUND;
@@ -1902,6 +1908,7 @@ static bool8 Fishing_CheckMoreDots(struct Task *task)
         if (moreDotsChance[task->tFishingRod][task->tRoundsPlayed] > probability)
             task->tStep = FISHING_START_ROUND;
     }
+    */
     return FALSE;
 }
 
