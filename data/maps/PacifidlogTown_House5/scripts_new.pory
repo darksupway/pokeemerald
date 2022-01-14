@@ -14,9 +14,6 @@ script PacifidlogTown_House5_EventScript_MirageIslandWatcherWife {
         release
         end
     }
-
-    release
-    end
 }
 
 text PacifidlogTown_House5_Text_NotGivenUp {
