@@ -59,7 +59,8 @@ bool8 IsMirageIslandPresentBox(void)
 
     for (j = 0; j < TOTAL_BOXES_COUNT; j++)
         for (k = 0; k < IN_BOX_COUNT; k++)
-            if (GetBoxMonDataAt(j, k, MON_DATA_SPECIES) != SPECIES_NONE)
+            if (GetBoxMonDataAt(j, k, MON_DATA_SPECIES) != SPECIES_NONE &&
+                !GetBoxMonData(&gPokemonStoragePtr->boxes[i][j], MON_DATA_IS_EGG))
                 if ((GetBoxMonDataAt(j, k, MON_DATA_SPECIES) && (GetBoxMonDataAt(j, k, MON_DATA_PERSONALITY)) & 0xFFFF) == rnd)
                     return TRUE;
     
