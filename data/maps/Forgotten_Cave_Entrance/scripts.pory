@@ -1,5 +1,25 @@
 mapscripts Forgotten_Cave_Entrance_MapScripts {}
 
+script Forgotten_Cave_Entrance_SomethingHappenedOutside {
+    lock
+
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+    setvar(VAR_0x8004, 1)   // vertical pan
+    setvar(VAR_0x8005, 1)   // horizontal pan
+    setvar(VAR_0x8006, 8)   // num shakes
+    setvar(VAR_0x8007, 5)   // shake delay
+    special(ShakeCamera)
+    waitstate
+    waitmovement(0)
+
+    setvar(VAR_BATTLE_FRONTIER_EAST_STATE, 1)
+
+    msgbox(format("Something seems to have happened outside the cave."), MSGBOX_AUTOCLOSE)
+
+    release
+    end
+}
+
 script AncientText1 {
     lock
     msgbox(format("In ... land of ...isue the Al...hty Sin...h, the Orig...ne, cr...ted bei... of ti..., ...ace and distor..."), MSGBOX_SIGN)

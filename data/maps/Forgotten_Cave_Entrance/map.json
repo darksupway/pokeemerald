@@ -84,7 +84,33 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 30,
+      "y": 33,
+      "elevation": 0,
+      "var": "VAR_BATTLE_FRONTIER_EAST_STATE",
+      "var_value": "0",
+      "script": "Forgotten_Cave_Entrance_SomethingHappenedOutside"
+    },
+    {
+      "type": "trigger",
+      "x": 31,
+      "y": 32,
+      "elevation": 0,
+      "var": "VAR_BATTLE_FRONTIER_EAST_STATE",
+      "var_value": "0",
+      "script": "Forgotten_Cave_Entrance_SomethingHappenedOutside"
+    },
+    {
+      "type": "trigger",
+      "x": 32,
+      "y": 33,
+      "elevation": 0,
+      "var": "VAR_BATTLE_FRONTIER_EAST_STATE",
+      "var_value": "0",
+      "script": "Forgotten_Cave_Entrance_SomethingHappenedOutside"
+    }
   ],
   "bg_events": [
     {

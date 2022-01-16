@@ -1,3 +1,16 @@
+BattleFrontier_OutsideEast_OnLoad::
+	compare VAR_BATTLE_FRONTIER_EAST_STATE, 1
+	goto_if_ge BattleFrontier_OutsideEast_OnLoad_2
+	end
+
+BattleFrontier_OutsideEast_OnLoad_2:
+	setmetatile 28, 9, 1, 0
+	setmetatile 29, 9, 1, 0
+	setmetatile 30, 9, 1, 0
+	setmetatile 31, 9, 1, 0
+	end
+
+
 MysteryManOldSeaMap::
 	lockall
 	faceplayer
