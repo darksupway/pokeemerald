@@ -13,10 +13,6 @@ mapscripts AlteringCave_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
         setflag(FLAG_LANDMARK_ALTERING_CAVE)
         setvar(VAR_ALTERING_CAVE_WILD_SET, 0)
-        if (!flag(FLAG_HIDE_MYSTERY_MAN_LAST)) {
-            setflag(FLAG_ITEM_ALTERING_CAVE_ENIGMA_BERRY)
-            end
-        }
         end
     }
 }

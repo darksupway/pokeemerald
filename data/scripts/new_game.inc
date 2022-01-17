@@ -279,5 +279,6 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_HIDE_MYSTERY_MAN_FORGOTTEN_CAVE
 	setflag FLAG_HIDE_MYSTERY_MAN_LAST
 	setflag FLAG_HIDE_BERRY_SELLER
+	setflag FLAG_ITEM_ALTERING_CAVE_ENIGMA_BERRY
 	call EventScript_ResetAllBerries
 	end
